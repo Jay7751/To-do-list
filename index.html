@@ -15,6 +15,24 @@
         <ul id = "taskList"></ul>
     </div>
     <div>
+        import { initializeApp } from "firebase/app";
+        import { getAnalytics } from "firebase/analytics";
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+        <script>
+        const firebaseConfig = {
+        apiKey: "AIzaSyD_Mady1hPheNPCK31TuskoT-hRpJ-gsMg",
+        authDomain: "to-do-list-a82fc.firebaseapp.com",
+        projectId: "to-do-list-a82fc",
+        storageBucket: "to-do-list-a82fc.firebasestorage.app",
+        messagingSenderId: "201064774544",
+        appId: "1:201064774544:web:0e3b9393309966b424d115",
+        measurementId: "G-D96DK7DWHT"
+        };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    </script>
+
         <script src = "js/script.js"></script>
     </div>
 </body>
